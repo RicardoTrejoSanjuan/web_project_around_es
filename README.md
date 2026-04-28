@@ -75,3 +75,19 @@ Estos conceptos se aplican a cualquier proyecto web, desde páginas simples hast
 | Name    | Project         | Type              |
 | ------- | --------------- | ----------------- |
 | Ricardo | Around The U.S. | Personal practice |
+
+## 📅 Versión\*\*:
+
+| Version | Date       | Description                           |
+| ------- | ---------- | ------------------------------------- |
+| 1.0.0   | 2026-04-28 | Initial version                       |
+| 1.0.2   | 2026-04-28 | Added JavaScript, Popup functionality |
+
+## 🔧 Features
+
+### Release 1.0.2:
+
+- Added JavaScript, Popup functionality
+- Implemented Open and Close functionality
+- Save data from fields to modal
+- Save changes in fields
