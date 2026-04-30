@@ -18,35 +18,46 @@ La **estructura de archivos** es la organización física de todos los archivos 
 
 Este proyecto sigue una estructura modular:
 
+# File Tree: web_project_around_es
+
 ```
-web_project_around_es/
-├── index.html              # Archivo principal HTML
-├── pages/
-│   └── index.css         # CSS principal (importa módulos)
-├── blocks/              # Módulos CSS individuales
-│   ├── page.css
-│   ├── header.css
-│   ├── profile.css
-│   ├── cards.css
+├── blocks
 │   ├── card.css
-│   ├── popup.css
+│   ├── cards.css
 │   ├── content.css
-│   └── footer.css
-├── scripts/
-│   └── index.js         # Lógica JavaScript
-├── images/              # Imágenes y iconos SVG
-│   ├── logo.svg
-│   ├── avatar.jpg
+│   ├── footer.css
+│   ├── header.css
+│   ├── page.css
+│   ├── popup.css
+│   └── profile.css
+├── images
+│   ├── Screenshot.png
 │   ├── add-icon.svg
-│   ├── edit-icon.svg
+│   ├── avatar.jpg
+│   ├── close.svg
 │   ├── delete-icon.svg
-│   ├── like-inactive.svg
+│   ├── edit-icon.svg
 │   ├── like-active.svg
-│   └── close.svg
-├── vendor/              # Librerías externas
-│   ├── normalize.css
-│   └── fonts/
-└── README.md           # Documentación
+│   ├── like-inactive.svg
+│   ├── logo.svg
+│   └── placeholder.jpg
+├── pages
+│   └── index.css
+├── scripts
+│   ├── cards.js
+│   ├── const.js
+│   └── index.js
+├── vendor
+│   ├── fonts
+│   │   ├── Inter-Black.woff2
+│   │   ├── Inter-Medium.woff2
+│   │   └── Inter-Regular.woff2
+│   ├── fonts.css
+│   └── normalize.css
+├── .editorconfig
+├── .prettierignore
+├── README.md
+└── index.html
 ```
 
 ## 📚 Acerca del proyecto
@@ -78,10 +89,11 @@ Estos conceptos se aplican a cualquier proyecto web, desde páginas simples hast
 
 ## 📅 Versión\*\*:
 
-| Version | Date       | Description                           |
-| ------- | ---------- | ------------------------------------- |
-| 1.0.0   | 2026-04-28 | Initial version                       |
-| 1.0.2   | 2026-04-28 | Added JavaScript, Popup functionality |
+| Version | Date       | Description                                        |
+| ------- | ---------- | -------------------------------------------------- |
+| 1.0.0   | 2026-04-28 | Initial version                                    |
+| 1.0.2   | 2026-04-28 | Added JavaScript, Popup functionality              |
+| 1.0.3   | 2026-04-30 | Added initial cards, popups, like and delete cards |
 
 ## 🔧 Features
 
@@ -91,3 +103,10 @@ Estos conceptos se aplican a cualquier proyecto web, desde páginas simples hast
 - Implemented Open and Close functionality
 - Save data from fields to modal
 - Save changes in fields
+
+### Release 1.0.3:
+
+- Added initial cards
+- Implemented Like and Delete functionality
+- Implemented Image popup functionality
+- Created cards.js and const.js files for storing initial cards data and constants
