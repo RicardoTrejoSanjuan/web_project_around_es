@@ -1,26 +1,36 @@
-# Tripleten web_project_around_es
+# TripleTen web_project_around_es
 
-Este proyecto es una aplicación web de galerías fotográficas llamada **Around The U.S.** Fue construida durante el Sprint 6 de TripleTen, utilizando únicamente tecnologías web fundamentales: **HTML**, **CSS** y **JavaScript** sin ningún framework.
+**Around The U.S.** is a photo gallery web application built at TripleTen with **HTML**, **CSS**, and **vanilla JavaScript**. The project uses **BEM**, **responsive design**, and a modular JavaScript structure for popups, cards, and form validation.
 
----
+## Live Demo
 
-## 🚀 Live Demo
+<https://ricardotrejosanjuan.github.io/web_project_around_es/>
 
-👉 **[View Live Demo](https://ricardotrejosanjuan.github.io/web_project_around_es/)**
+![Around The U.S. Screenshot](./images/Screenshot.png)
 
-![Expense Tracker Screenshot](./images/Screenshot.png)
+## Current Features
 
----
+- Edit profile information through a popup.
+- Create new cards through a form.
+- Dynamically render the initial cards.
+- Like and delete cards.
+- Open images in an enlarged popup view.
+- Close modals with the close button, overlay click, and `Escape` key.
+- Real-time form validation.
+- Disabled submit buttons when a form is invalid.
+- Clear validation errors when reopening forms.
 
-## Estructura del Proyecto
+## Technologies
 
-La **estructura de archivos** es la organización física de todos los archivos que componen una aplicación web. Incluye HTML, CSS, JavaScript, imágenes, fuentes y dependencias.
+- HTML5
+- CSS3
+- JavaScript ES6 Modules
+- BEM
+- Responsive Design
 
-Este proyecto sigue una estructura modular:
+## Project Structure
 
-# File Tree: web_project_around_es
-
-```
+```text
 ├── blocks
 │   ├── card.css
 │   ├── cards.css
@@ -46,7 +56,18 @@ Este proyecto sigue una estructura modular:
 ├── scripts
 │   ├── cards.js
 │   ├── const.js
-│   └── index.js
+│   ├── index.js
+│   ├── features
+│   │   ├── card.js
+│   │   ├── events.js
+│   │   ├── profile.js
+│   │   └── validate.js
+│   ├── selectors
+│   │   ├── card.elements.js
+│   │   ├── popup.elements.js
+│   │   └── profile.elements.js
+│   └── utils
+│       └── modal.js
 ├── vendor
 │   ├── fonts
 │   │   ├── Inter-Black.woff2
@@ -56,57 +77,34 @@ Este proyecto sigue una estructura modular:
 │   └── normalize.css
 ├── .editorconfig
 ├── .prettierignore
+├── .gitignore
+├── .prettierrc.json
 ├── README.md
 └── index.html
 ```
 
-## 📚 Acerca del proyecto
+## Recent Changes
 
-Este proyecto **Around The U.S.** demuestra los fundamentos del desarrollo web:
+### Version 1.0.4 - 2026-05-21
 
-- **HTML** estructura el contenido
-- **CSS** controla la presentación
-- **JavaScript** añade interactividad
-- **BEM** mantiene el código organizado
-- **Diseño responsive** asegura compatibilidad
+- Refactored `scripts/index.js` into a modular, responsibility-based architecture.
+- Added separate modules for cards, profile, events, validation, and modal utilities.
+- Moved DOM selectors into dedicated files.
+- Added native form validation with visible UI error messages.
+- Disabled `Save` and `Create` buttons when fields are invalid.
+- Reset validation state when opening forms.
+- Added global popup closing with overlay click and `Escape` key.
+- Updated `index.html` and `blocks/popup.css` to support validation and visual states.
 
-Estos conceptos se aplican a cualquier proyecto web, desde páginas simples hasta aplicaciones complejas con frameworks.
+## Versions
 
-### Próximos Pasos
+| Version | Date       | Description                                               |
+| ------- | ---------- | --------------------------------------------------------- |
+| 1.0.0   | 2026-04-28 | Initial version                                           |
+| 1.0.2   | 2026-04-28 | Added JavaScript and profile popup functionality          |
+| 1.0.3   | 2026-04-30 | Added initial cards, image popup, like and delete actions |
+| 1.0.4   | 2026-05-21 | Modularized JavaScript and added form validation          |
 
-1. Añade funcionalidad JavaScript
-2. Implementa el formulario de agregar nuevas tarjetas
-3. Añade funcionalidad de "me gusta"
-4. Explora localStorage para persistencia de datos
+## Author
 
----
-
-## 👤 Author
-
-| Name    | Project         | Type              |
-| ------- | --------------- | ----------------- |
-| Ricardo | Around The U.S. | Personal practice |
-
-## 📅 Versión\*\*:
-
-| Version | Date       | Description                                        |
-| ------- | ---------- | -------------------------------------------------- |
-| 1.0.0   | 2026-04-28 | Initial version                                    |
-| 1.0.2   | 2026-04-28 | Added JavaScript, Popup functionality              |
-| 1.0.3   | 2026-04-30 | Added initial cards, popups, like and delete cards |
-
-## 🔧 Features
-
-### Release 1.0.2:
-
-- Added JavaScript, Popup functionality
-- Implemented Open and Close functionality
-- Save data from fields to modal
-- Save changes in fields
-
-### Release 1.0.3:
-
-- Added initial cards
-- Implemented Like and Delete functionality
-- Implemented Image popup functionality
-- Created cards.js and const.js files for storing initial cards data and constants
+Ricardo Trejo
